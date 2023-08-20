@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1651995_2t26t49q3uo.css">
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <div class="drawer lg:drawer-open">
+  <div class="drawer lg:drawer-open" style="position: fixed;width: 20rem;">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col items-center justify-center">
       <!-- Page content here -->
-      <label for="my-drawer-2" class="btn btn-primary lg:hidden">MENU</label>
+      <label for="my-drawer-2" class="btn btn-active drawer-button lg:hidden" style="left: 0%;top: 0%;position: fixed;font-size: 25px;">≡</label>
     
     </div> 
     <div class="drawer-side">
@@ -20,14 +21,28 @@
       <ul class="menu p-5 w-80 h-full bg-base-300 text-base-content">
         <!-- Sidebar content here -->
         <li>
-          <a>🏠主页</a>
-        
+          <a style="font-size:clamp(0.813rem, 0.806rem + 0.34vw, 1.063rem);font-weight: bold;">🏠主页</a>
         </li>
-        <li><a>🤟原创</a></li>
-        <li><a>✍️翻唱</a></li>
-        <li><a>❤️喜欢</a></li>
+        
+        <li><a style="font-size:clamp(0.813rem, 0.806rem + 0.34vw, 1.063rem);font-weight: bold;">🤟原创</a></li>
+        
+        <li><a style="font-size:clamp(0.813rem, 0.806rem + 0.34vw, 1.063rem);font-weight: bold;">✍️翻唱</a></li>
+       
+        <li><a style="font-size:clamp(0.813rem, 0.806rem + 0.34vw, 1.063rem);font-weight: bold;">❤️喜欢</a></li>
+        <a style="font-size: clamp(0.813rem, 0.793rem + 1.03vw, 1.563rem); bottom: 5%;position: fixed;font-weight: bold;">🎵Mizuhara37 Music</a>
       </ul>
     
+    </div>
+  </div>
+  <div class="home" style="left: 20%;">
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+          <h1 class="font-bold" style="font-size: clamp(1rem, -0.455rem + 7.27vw, 5rem);">Mizuhara37 Music</h1>
+          <p class="py-6">所有改编，原创或者是喜欢的歌都会在这里哦~</p>
+          <button class="btn btn-info">开始探索</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
